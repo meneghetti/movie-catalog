@@ -1,12 +1,73 @@
 header {
-  position: absolute;
   width: 100%;
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
-  z-index: 10;
-}
+  justify-content: center;
+  background: $dark;
 
-#logo {
-  display: flex;
-  height: 2.5rem;
+  .header-wrapper {
+    @include breakpoint(md) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 1140px;
+      gap: 40px;
+    }  
+  }
+
+  nav {
+    @include breakpoint(md) {
+      flex: auto;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 15px;
+
+    @include breakpoint(md) {
+      gap: 30px;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: $light;
+    }
+  }
+
+  #block-movie-catalog-site-branding {
+    text-align: center;
+
+    a {
+      color: $light;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+  }
+  
+  #search-block-form {
+    display: flex;
+  
+    .form-search {
+      height: 2rem;
+      padding: 0 0.5rem;
+      border-radius: 4px 0 0 4px;
+      border: none;
+
+      @include breakpoint(md) {
+        width: 200px;
+      }
+    }
+  
+    .form-submit {
+      height: 2rem;
+      padding: 0 0.5rem;
+      border-radius: 0 4px 4px 0;
+      border: none;
+    }
+  }
 }
