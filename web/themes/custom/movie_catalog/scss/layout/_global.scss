@@ -5,3 +5,13 @@ body {
   font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
+
+.content-wrapper {
+  padding: 20px;
+
+  @include breakpoint(md) {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+  }  
+}

@@ -7,11 +7,8 @@ base theme: false
 # Defines libraries group in which we can add CSS/JS.
 libraries:
   - movie_catalog/global-styling
-# Regions, quote the names
+# Defines regions and region names
 regions:
   header: 'Header'
-  featured: 'Featured'
   content: 'Content'
-  sidebar_first: 'First sidebar'
-  sidebar_second: 'Second sidebar'
-  footer: 'Footer'
+  
