@@ -6,9 +6,11 @@ body {
   font-weight: 400;
 }
 
-.content-wrapper {
+.layout-content {
   padding: 20px;
+}
 
+.content-wrapper {
   @include breakpoint(md) {
     width: 100%;
     max-width: 1140px;

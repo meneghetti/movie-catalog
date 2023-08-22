@@ -1,0 +1,62 @@
+#block-movie-catalog-content {
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .item-list {
+    > ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+
+      @include breakpoint(sm) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoint(md) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include breakpoint(lg) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      li {
+        background: white;
+        color: $dark;
+        padding: 22px;
+        box-shadow: 2px 2px 13px -7px rgba(0,0,0,.2);
+        flex: 1;
+        height: 100%;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .views-field-field-poster {
+    text-align: center;
+  }
+
+  .views-field-title {
+    a {
+      font-size: 1rem;
+      color: #060606;
+      font-weight: 700;
+      padding: 15px 0 8px;
+      display: block;
+      line-height: 1.4;
+    }
+  }
+
+  .views-field-field-synopsis {
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
