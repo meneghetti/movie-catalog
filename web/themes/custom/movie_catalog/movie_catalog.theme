@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Olivero theme.
+ */
+
+use Drupal\olivero\OliveroPreRender;
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Render\Element;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter for blocks.
+ */
+function movie_catalog_theme_suggestions_block_alter(&$suggestions, $variables) {
+
+  // Load theme suggestions for blocks from parent theme.
+  foreach ($suggestions as &$suggestion) {
+    $suggestion = str_replace('movie_catalog_', 'stable9_', $suggestion);
+  }
+}

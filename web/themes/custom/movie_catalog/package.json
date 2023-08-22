@@ -1,0 +1,15 @@
+{
+  "name": "movie_catalog",
+  "version": "1.0.0",
+  "description": "Movie Catalog",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch --update --style=compressed scss:css",
+    "build": "sass --no-source-map --style=compressed scss:css"
+  },
+  "author": "Diego Meneghetti",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.64.2"
+  }
+}
