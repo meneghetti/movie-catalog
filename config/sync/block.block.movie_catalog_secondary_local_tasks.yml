@@ -1,0 +1,22 @@
+uuid: 7b7b94ba-d97d-4aed-93ed-9b79c657bf5f
+langcode: en
+status: false
+dependencies:
+  theme:
+    - movie_catalog
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: movie_catalog_secondary_local_tasks
+theme: movie_catalog
+region: header
+weight: 3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

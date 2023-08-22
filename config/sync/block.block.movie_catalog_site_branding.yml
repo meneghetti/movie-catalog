@@ -1,0 +1,25 @@
+uuid: 0173f7e9-4023-4dbf-a473-a443964c08cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie_catalog
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: movie_catalog_site_branding
+theme: movie_catalog
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

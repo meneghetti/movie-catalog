@@ -1,0 +1,22 @@
+uuid: 3c05adb8-cc8b-4f54-bf0f-117751cc327d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - movie_catalog
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: movie_catalog_breadcrumbs
+theme: movie_catalog
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
