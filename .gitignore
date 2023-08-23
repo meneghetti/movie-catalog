@@ -11,6 +11,3 @@ node_modules
 
 # Ignore .DS_Store
 .DS_Store
-
-# Ignore images
-/web/sites/default/files
