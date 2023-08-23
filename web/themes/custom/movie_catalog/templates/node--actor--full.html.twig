@@ -1,0 +1,23 @@
+<article{{ attributes.addClass('actor-full') }}>
+  {{ title_prefix }}
+  <h2{{ title_attributes }}>
+    {{ label }}
+  </h2>
+  {{ title_suffix }}
+
+  <div{{ content_attributes }} class="actor-content">
+    <div class="actor-picture">
+      {{ content.field_picture }}
+    </div>
+    <div class="inner-content">
+      <h3>Biography</h3>
+      <p>
+        {{ content.field_biography[0] }}
+      </p>
+      <div class="filmography">
+        <h3>Filmography</h3>
+        {{ content.field_filmography }}
+      </div>
+    </div>
+  </div>
+</article>

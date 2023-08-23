@@ -1,5 +1,5 @@
 {% if content %}
-  <div{{ attributes }} class="content-wrapper">
+  <div{{ attributes.addClass('content-wrapper') }}>
     {{ content }}
   </div>
 {% endif %}
