@@ -1,0 +1,23 @@
+<article{{ attributes }} class="movie-full">
+  {{ title_prefix }}
+  <h2{{ title_attributes }}>
+    {{ label }}
+  </h2>
+  {{ title_suffix }}
+
+  <div{{ content_attributes }} class="movie-content">
+    <div class="movie-poster">
+      {{ content.field_poster }}
+    </div>
+    <div class="inner-content">
+      <h3>Synopsis</h3>
+      <p>
+        {{ content.field_synopsis[0] }}
+      </p>
+      <div class="movie-cast">
+        <h3>Cast</h3>
+        {{ content.field_cast }}
+      </div>
+    </div>
+  </div>
+</article>
