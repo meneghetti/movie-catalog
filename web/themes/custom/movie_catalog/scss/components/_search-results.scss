@@ -1,0 +1,147 @@
+.search-results {
+  label {
+    margin: 10px 0;
+    width: 210px;
+    display: inline-block;
+
+    &[for="edit-keys"] {
+      width: 100%;
+    }
+
+    &.option {
+      margin: 10px 0 0px;
+      padding: 0 7px;
+    }
+  }
+
+  #block-movie-catalog-content {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+    summary {
+      margin: 12px 0;
+      cursor: pointer;
+    }
+
+    .search-help-link {
+      color: $dark;
+      text-decoration: underline;
+    }
+
+    h2 {
+      width: 100%;
+      font-size: 1.5rem;
+      color: $dark;
+      border-bottom: solid 1px rgba(6,6,6,.3);
+      padding: 10px 0;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+  
+    li {
+      width: 100%;
+      background: white;
+      margin-top: 15px;
+      border-radius: 4px;
+      padding: 25px;
+      box-shadow: 2px 2px 13px -7px rgba(0,0,0,.2);
+  
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      a {
+        font-size: 1.2rem;
+        color: $dark;
+        font-weight: 700;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+  
+      p {
+        color: $dark;
+        font-size: 0.9rem;
+        font-weight: normal;
+      }
+    }
+
+    legend {
+      font-weight: 700;
+    }
+
+    fieldset {
+      margin: 18px 0;
+
+      &#edit-lang-fieldset {
+        display: none;
+      }
+
+      input {
+        border: 0;
+        background: white;
+        padding: 10px;
+        box-shadow: 2px 2px 13px -7px rgba(0,0,0,.2);
+      }
+    }
+
+    #edit-keywords-fieldset {
+      .form-item {
+        margin-bottom: 10px;
+      }
+    }
+
+    #edit-basic {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 400px;
+      align-items: center;
+      margin: 0 auto 35px;
+
+      @include breakpoint(md) {
+        margin: auto;
+      }
+
+      .form-item {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+      }
+    }
+
+    #edit-keys {
+      height: 4rem;
+      padding: 1rem;
+      border-radius: 4px 0 0 4px;
+      border: none;
+      font-size: 1.5rem;
+      box-shadow: 2px 2px 13px -7px rgba(0,0,0,.2);
+    }
+
+    #edit-submit,
+    #edit-submit--2 {
+      border: 0;
+      background: #ebebeb;
+      color: #060606;
+      width: 100%;
+      height: 3rem;
+      margin-top: 8px;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    #edit-submit--2 {
+      width: 200px;
+    }
+  }
+}
