@@ -42,15 +42,17 @@ header {
       }
 
       &.is-active::before {
-        background: $light;
-        content: "";
-        display: block;
-        height: 3px;
-        left: 0;
-        top: -32px;
-        position: absolute;
-        width: 100%;
-        pointer-events: none;
+        @include breakpoint(md) {
+          background: $light;
+          content: "";
+          display: block;
+          height: 3px;
+          left: 0;
+          top: -32px;
+          position: absolute;
+          width: 100%;
+          pointer-events: none;   
+        }
       }
     }
   }
