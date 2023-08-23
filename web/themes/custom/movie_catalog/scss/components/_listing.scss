@@ -52,7 +52,8 @@
     }
   }
 
-  .views-field-field-poster {
+  .views-field-field-poster,
+  .views-field-field-picture {
     text-align: center;
     overflow: hidden;
 
@@ -73,7 +74,8 @@
     }
   }
 
-  .views-field-field-synopsis {
+  .views-field-field-synopsis,
+  .views-field-field-biography {
     display: -webkit-box;
     max-width: 100%;
     -webkit-line-clamp: 3;
