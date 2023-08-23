@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.page
     - taxonomy.vocabulary.tags
   module:
     - comment
@@ -29,14 +28,10 @@ permissions:
   - 'access toolbar'
   - 'access tour'
   - 'administer url aliases'
-  - 'create page content'
   - 'create terms in tags'
   - 'create url aliases'
   - 'delete own files'
-  - 'delete own page content'
-  - 'delete page revisions'
   - 'edit own comments'
-  - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'
