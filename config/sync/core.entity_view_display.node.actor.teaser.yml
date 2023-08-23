@@ -1,0 +1,38 @@
+uuid: 43b0c1eb-42c8-41d3-be7a-ca7987e0b8f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actor.field_biography
+    - field.field.node.actor.field_filmography
+    - field.field.node.actor.field_picture
+    - image.style.medium
+    - node.type.actor
+  module:
+    - image
+    - user
+id: node.actor.teaser
+targetEntityType: node
+bundle: actor
+mode: teaser
+content:
+  field_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_biography: true
+  field_filmography: true
